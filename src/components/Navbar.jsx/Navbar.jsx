@@ -1,10 +1,11 @@
 import React from "react";
-import "../components/Navbar.css";
-import logo from "../components/img/smartking-logo.png";
-import carrito from "../components/img/shopping-cart.png";
-import user from "../components/img/user.png";
-import mail from "../components/img/mail.png";
-import phone from "../components/img/phone.png";
+import "../Navbar.jsx/Navbar.css";
+import logo from "../img/smartking-logo.png";
+import user from "../img/user.png";
+import mail from "../img/mail.png";
+import phone from "../img/phone.png";
+import Cartwidget from "../Cartwidget.jsx/Cartwidget";
+
 
 function Navbar() {
   return (
@@ -34,12 +35,15 @@ function Navbar() {
         </div>
 
         <img className="logo_header" src={logo} alt="" />
-
         <div>
           <img className="r_header" src={user} alt="" />
-          <img className="r_header" src={carrito} alt="" />
+          <Cartwidget/>
         </div>
       </header>
+
+      <section>
+        <img src="https://img.freepik.com/foto-gratis/mujer-comprobando-tiempo-su-telefono_53876-129658.jpg?w=2000" alt="" />
+      </section>
     </>
   );
 }
