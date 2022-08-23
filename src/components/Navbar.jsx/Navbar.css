@@ -63,3 +63,8 @@ a:hover {
     margin-right: 1rem;
     cursor: pointer;
 }
+
+.banner {
+    display: flex;
+    justify-content: center;
+}

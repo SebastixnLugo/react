@@ -8,6 +8,8 @@ import Cartwidget from "../Cartwidget.jsx/Cartwidget";
 
 
 function Navbar() {
+  const NavBarItems = ["Celulares", "Smartwaches"]
+  const ProfileCart = [{logo}, {user}, <Cartwidget/> ]
   return (
     <>
       <div className="after_header">
@@ -25,15 +27,12 @@ function Navbar() {
       <header>
         <div>
           <ul className="nav_header">
-            <li>
-              <a href="/">Celulares</a>
-            </li>
-            <li>
-              <a href="/">Smartwaches</a>
-            </li>
+            {NavBarItems.map((item)=> 
+            <li key={item}><a href="#">{item}</a></li>)}
           </ul>
         </div>
 
+        
         <img className="logo_header" src={logo} alt="" />
         <div>
           <img className="r_header" src={user} alt="" />
@@ -41,8 +40,8 @@ function Navbar() {
         </div>
       </header>
 
-      <section>
-        <img src="https://img.freepik.com/foto-gratis/mujer-comprobando-tiempo-su-telefono_53876-129658.jpg?w=2000" alt="" />
+      <section className="banner">
+        <img src="https://cdn.discordapp.com/attachments/748659559530233911/1008047662240632892/banner-xiaomi_.png" alt="" />
       </section>
     </>
   );
