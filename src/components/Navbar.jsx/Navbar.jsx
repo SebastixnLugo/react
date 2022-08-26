@@ -9,7 +9,7 @@ import Cartwidget from "../Cartwidget.jsx/Cartwidget";
 
 function Navbar() {
   const NavBarItems = ["Celulares", "Smartwaches"]
-  const ProfileCart = [{logo}, {user}, <Cartwidget/> ]
+  
   return (
     <>
       <div className="after_header">

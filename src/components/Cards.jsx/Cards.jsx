@@ -1,6 +1,8 @@
-import React from 'react'
-import './Cards.css'
-import Samsungm62 from '../img/Samsung-Galaxy-M62_03.png'
+import React from "react"
+import "./Cards.css"
+import Samsungm62 from "../img/Samsung-Galaxy-M62_03.png"
+import Itemcount from "../Itemcount.jsx/Itemcount.jsx"
+
 
 function Cards() {
   return (
@@ -18,7 +20,9 @@ function Cards() {
           <h5>Samsung Galaxy M62 256GB/8GB</h5>
           <span>$424.900</span>
         </div>
-        <button className='boton-producto'>Comprar ya</button>
+        <Itemcount/>
+        
+        
       </div>
     </div>
     </div>
