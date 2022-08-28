@@ -28,7 +28,7 @@ function Navbar() {
         <div>
           <ul className="nav_header">
             {NavBarItems.map((item)=> 
-            <li key={item}><a href="#">{item}</a></li>)}
+            <li key={item}><a className="a_navbar" href="#">{item}</a></li>)}
           </ul>
         </div>
 
@@ -43,6 +43,12 @@ function Navbar() {
       <section className="banner">
         <img src="https://cdn.discordapp.com/attachments/748659559530233911/1008047662240632892/banner-xiaomi_.png" alt="" />
       </section>
+
+      <h2 style={{ textAlign: "center", paddingTop: "1.5rem" }}>
+        Lo ultimo que ha llegado
+      </h2>
+
+      
     </>
   );
 }

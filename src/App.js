@@ -1,13 +1,12 @@
 import './App.css';
 import Navbar from './components/Navbar.jsx/Navbar';
-import Cards from './components/Cards.jsx/Cards';
-import './components/Cards.jsx/Cards.css'
+import ItemListContainer from './components/ItemListContainer.jsx/ItemListContainer.jsx';
 
 function App() {
   return (
 <>
  <Navbar/>
- <Cards/>
+ <ItemListContainer/>
  <div className='section-1'>
 
  </div>

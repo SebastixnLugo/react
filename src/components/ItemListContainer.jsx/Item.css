@@ -10,12 +10,10 @@
     width: 100%;
 }
 
-.section-1{
-    display: flex;
-    justify-content: center;
-    min-height: 50vh;
-    margin: auto;
-    max-width: 70rem;
+.container_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 600px));
+    grid-template-rows: repeat(auto-fit, minmax(500px));
 }
 
 .caja-producto {
@@ -47,4 +45,14 @@
 .etiqueta-nuevo span{
     color: white;
 
+}
+
+
+
+.celular h5 {
+    color: #000;
+}
+
+.celular h3 {
+    color: #000;
 }
