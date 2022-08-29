@@ -36,12 +36,12 @@ p {
     display: flex;
 }
 
-.a_navbar a, a:link, a:visited {
+.nav_link {
     text-decoration: none;
     color: #fff;
 }
 
-.a_navbar  a:hover {
+.nav_link:hover {
     color: #F99F02;
     transition: all 0.5s;
 }

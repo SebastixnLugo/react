@@ -5,10 +5,10 @@ import user from "../img/user.png";
 import mail from "../img/mail.png";
 import phone from "../img/phone.png";
 import Cartwidget from "../Cartwidget.jsx/Cartwidget";
+import {NavLink} from "react-router-dom";
 
 
 function Navbar() {
-  const NavBarItems = ["Celulares", "Smartwaches"]
   
   return (
     <>
@@ -27,8 +27,8 @@ function Navbar() {
       <header>
         <div>
           <ul className="nav_header">
-            {NavBarItems.map((item)=> 
-            <li key={item}><a className="a_navbar" href="#">{item}</a></li>)}
+            <li><NavLink className="nav_link" to="/categoria/celulares">Celulares</NavLink></li>
+            <li><NavLink className="nav_link" to="/categoria/smartwatch">Smartwatch</NavLink></li>
           </ul>
         </div>
 
