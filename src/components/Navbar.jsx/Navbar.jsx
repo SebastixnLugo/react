@@ -41,7 +41,9 @@ function Navbar() {
       </header>
 
       <section className="banner">
-        <img src="https://cdn.discordapp.com/attachments/748659559530233911/1008047662240632892/banner-xiaomi_.png" alt="" />
+        <a href="index.html"><img src="https://cdn.discordapp.com/attachments/748659559530233911/1008047662240632892/banner-xiaomi_.png" alt=""/></a>
+        
+        
       </section>
 
       
