@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.detalle_img {
+    max-width: 500px;
+}
+
+.detalle_contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,15 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar.jsx/Navbar';
-import ItemListContainer from './components/ItemListContainer.jsx/ItemListContainer.jsx';
+import ItemDetailContainer from './components/ItemDetailContainer.jsx/ItemDetailContainer';
 
 function App() {
   return (
 <>
  <Navbar/>
- <ItemListContainer/>
- <div className='section-1'>
+ <ItemDetailContainer/>
 
- </div>
+
+
 </>
 
   
