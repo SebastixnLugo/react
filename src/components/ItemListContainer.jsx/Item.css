@@ -7,17 +7,14 @@
 }
 
 .container {
-    margin-top: 2rem;
-    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px 0 10rem;
+    padding-top: 4rem;
+    
 }
 
-.container_box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 40px;
-    margin: 0 220px 0 220px;
-}
 
 .caja-producto {
     width: 300px;
@@ -26,9 +23,9 @@
     border-radius: 5px;
 }
 
-.imagen-producto img {
+.imagen-producto{
     padding-top: 1rem;
-    width: 300px;
+    max-width: 300px;
 }
 
 .detalles-producto {
