@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Itemcount from "../Itemcount.jsx/Itemcount";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 
 
-const onAdd = (cantidad) => {
-    console.log(`Compraste ${cantidad} productos`);
-  };
+
 const productos = [
   {
     id: 1,
@@ -15,7 +12,7 @@ const productos = [
     title: "Samsung Galaxy M62 256GB/8GB",
     category: "celulares",
     price: "$424.900",
-    btn: <Itemcount initial={1} stock={10} onAdd={onAdd} />,
+    
   },
 
   {
@@ -25,7 +22,7 @@ const productos = [
     title: "Xiaomi Redmi Note 10 5G",
     category: "celulares",
     price: "$249.900",
-    btn: <Itemcount initial={1} stock={10} onAdd={onAdd} />,
+    
   },
 
   {
@@ -35,7 +32,7 @@ const productos = [
     title: "OnePlus 9 Pro 5G 256GB/12GB",
     category: "celulares",
     price: "$694.900",
-    btn: <Itemcount initial={1} stock={10} onAdd={onAdd} />,
+    
   },
 
   {
@@ -45,7 +42,7 @@ const productos = [
     title: "OnePlus 9 Pro 5G 256GB/12GB",
     category: "celulares",
     price: "$694.900",
-    btn: <Itemcount initial={1} stock={10} onAdd={onAdd} />,
+    
   },
 
   {
@@ -55,7 +52,7 @@ const productos = [
     title: "Huawei Watch GT",
     category: "smartwatch",
     price: "$84.900",
-    btn: <Itemcount initial={1} stock={5} onAdd={onAdd} />,
+    
   },
   {
     id: 6,
@@ -64,7 +61,7 @@ const productos = [
     title: "Samsung Galaxy Watch",
     category: "smartwatch",
     price: "$139.900",
-    btn: <Itemcount initial={1} stock={10} onAdd={onAdd} />,
+    
   },
 ];
 

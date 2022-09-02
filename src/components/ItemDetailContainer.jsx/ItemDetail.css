@@ -6,12 +6,31 @@
     box-sizing: border-box;
 }
 
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
 .container_detail {
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .imagen_detail {
     max-width: 500px;
+}
+
+.caja_producto_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3_title {
+    color: #2b2b2b;
+}
+
+.h5_price {
+    color: #2b2b2b;
 }

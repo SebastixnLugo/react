@@ -12,10 +12,19 @@
     gap: 8px;
 }
 
-.counter button {
+.btn_buy {
     background-color: rgb(225, 225, 225);
-    border-radius: 0;
+    border: none ;
+    padding: 20px 10px 20px 10px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #ffb12a;
+    color: #fff;
+}
+
+.btn_buy:hover {
+    background-color: #F99F02;
+    transition: all 0.5s;
 }
 
 .counter:hover {

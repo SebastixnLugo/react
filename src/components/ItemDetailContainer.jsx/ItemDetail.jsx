@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "../ItemDetailContainer.jsx/ItemDetail.css";
+import Itemcount from "../Itemcount.jsx/Itemcount";
 import { Link } from "react-router-dom";
 
 function Item({ datos }) {
+  const [irCarrito, setIrCarrito] = useState(false);
+
+  const onAdd = (cantidad) => {
+    setIrCarrito(true);
+  };
   return (
     <>
       <div className="container_detail">
         <div className="container_box_detail">
-          <div className="caja-producto_detail">
+          <div className="caja_producto_detail">
             <Link to={`/detalle/${datos.id}`}>
               <img className="imagen_detail" src={datos.image} alt="" />
-              <div className="detalles_detail">
-                <h3>{datos.title}</h3>
-                <h5>{datos.price}</h5>
-              </div>
+
+              <h3 className="h3_title">{datos.title}</h3>
+              <h5 className="h5_price">{datos.price}</h5>
+              {irCarrito ? (
+                <Link to="/Cart">Finalizar su compra</Link>
+              ) : (
+                <Itemcount initial={1} stock={10} onAdd={onAdd} />
+              )}
             </Link>
           </div>
         </div>
