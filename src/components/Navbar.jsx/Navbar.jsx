@@ -8,6 +8,7 @@ import Cartwidget from "../Cartwidget.jsx/Cartwidget";
 import {NavLink} from "react-router-dom";
 
 
+
 function Navbar() {
   
   return (
@@ -35,8 +36,10 @@ function Navbar() {
         
         <img className="logo_header" src={logo} alt="" />
         <div>
-          <img className="r_header" src={user} alt="" />
+        {/* <img className="user_header" src={user} alt="" /> */}
+          <NavLink to="/cart">
           <Cartwidget/>
+          </NavLink>
         </div>
       </header>
 
