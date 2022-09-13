@@ -1,10 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/CartContext'
+import { addDoc, collection, getFirestore} from "firebase/firestore"
 import ItemCart from "../Itemcart.jsx/Itemcart"
 
 const Cart = () => {
   const { cart, precioTotal } = useCartContext()
+
+  const orden = {
+    comprador: {
+      nombre: "Osvaldo",
+      email: "osvaldo.coderhouse@gmail.com",
+      celular: "1122559900",
+      direccion: "Calle Falsa 123"
+    },
+    items: cart.map(product => ({id:product.id, title: product.title, price: product.price, quantity: product.quantity})),
+    total: precioTotal(),
+  }
+
+  const handleClick = () => {
+    const db = getFirestore()
+    const ordenCollection = collection(db, "ordenes")
+    addDoc(ordenCollection, orden)
+    .then(({id}) => console.log(id))
+
+  }
 
   if (cart.length === 0) {
     return (
@@ -20,7 +40,14 @@ const Cart = () => {
     {
     cart.map(product => <ItemCart key={product.id} product={product} />)
     }
-    <p className='p_cart'>Precio total: {precioTotal()}</p>
+    
+    <div className='total'>
+    <p className='p_cart_total'>Precio total: {precioTotal()}</p>
+    <button className='btn_orden' onClick={handleClick}>Generar su orden</button>
+    </div>
+    
+    
+    
     
     </>
   )

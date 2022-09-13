@@ -23,7 +23,7 @@ function Item({ datos }) {
               <img className="imagen_detail" src={datos.image} alt="" />
 
               <h3 className="h3_title">{datos.title}</h3>
-              <h5 className="h5_price">{datos.price}</h5>
+              <h5 className="h5_price">${datos.price} USD</h5>
               {irCarrito ? (
                 <Link to="/Cart">Finalizar su compra</Link>
               ) : (

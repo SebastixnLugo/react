@@ -1,7 +1,7 @@
 import React from "react";
 import "../Navbar.jsx/Navbar.css";
 import logo from "../img/smartking-logo.png";
-import user from "../img/user.png";
+// import user from "../img/user.png";
 import mail from "../img/mail.png";
 import phone from "../img/phone.png";
 import Cartwidget from "../Cartwidget.jsx/Cartwidget";
