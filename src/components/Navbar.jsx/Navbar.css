@@ -12,6 +12,7 @@ header {
     height: 3.6rem;
 }
 
+
 .after_header {
     background-color: #3b3b3b;
     display: flex;
@@ -64,6 +65,7 @@ p {
     max-width: 40px;
     cursor: pointer;
 }
+
 
 .banner {
     display: flex;

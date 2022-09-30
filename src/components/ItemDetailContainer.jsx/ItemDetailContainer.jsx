@@ -1,13 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import ItemDetail from './ItemDetail'
-// import Itemcount from '../Itemcount.jsx/Itemcount'
 import {getFirestore, doc, getDoc} from "firebase/firestore"
 import { useParams } from "react-router-dom";
 
-
-// const onAdd = (cantidad) => {
-//   console.log(`Compraste ${cantidad} productos`);
-// };
 
 
 const ItemDetailContainer = () => {

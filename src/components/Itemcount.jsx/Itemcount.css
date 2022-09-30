@@ -41,3 +41,13 @@ span {
     font-size: 15px;
 }
 
+.btn_count {
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.btn_count:hover {
+    color: #ffb12a;
+}

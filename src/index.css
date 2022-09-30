@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scroll::-webkit-scrollbar {
+  width: 7px;
+  
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #e69201;
+  border-radius: 5px;
+  border-right: 2px solid #d08502;
+}
+

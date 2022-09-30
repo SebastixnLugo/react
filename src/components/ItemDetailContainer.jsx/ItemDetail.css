@@ -14,23 +14,56 @@ a:link, a:visited, a:active {
 .container_detail {
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    margin-top: 5rem;
 }
 
 .imagen_detail {
     max-width: 500px;
+    border: #ddd 1px solid;
 }
 
-.caja_producto_detail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imagen_detail:hover {
+    transform: scale(1.1); 
+    transition: ease-in-out 0.5s;
+    border: none;
 }
+
 
 .h3_title {
     color: #2b2b2b;
 }
 
+.h3_title:hover {
+    color: #F99F02;
+    transition: all 0.5s;
+}
+
 .h5_price {
     color: #2b2b2b;
 }
+
+.info_r {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.finalizar_compra {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(225, 225, 225);
+   border: none;
+   padding: 16px 10px 16px 10px;
+   cursor: pointer;
+   font-family: 'Poppins', sans-serif;
+   background-color:  #ffb12a;
+   color: #fff;
+   margin-top: 10px;
+}
+
+.finalizar_compra:hover {
+    background-color: #F99F02;
+    transition: all 0.5s;
+}
+

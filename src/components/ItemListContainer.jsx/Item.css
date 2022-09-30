@@ -50,3 +50,19 @@ a:link, a:visited, a:active {
     color: white;
 
 }
+
+.btn_info {
+    background-color: rgb(225, 225, 225);
+    border: none;
+    padding: 10px 8px 10px 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #ffb12a;
+    color: #fff;
+    margin: .5em;
+}
+
+.btn_info:hover {
+    background-color: #F99F02;
+    transition: all 0.5s;
+}

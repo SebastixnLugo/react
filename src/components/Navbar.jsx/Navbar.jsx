@@ -33,8 +33,8 @@ function Navbar() {
           </ul>
         </div>
 
+        <NavLink className="logo_header" to="/"><img  src={logo} alt="" /></NavLink>
         
-        <img className="logo_header" src={logo} alt="" />
         <div>
         {/* <img className="user_header" src={user} alt="" /> */}
           <NavLink to="/cart">

@@ -14,7 +14,7 @@ function Item({ info }) {
               <div className="detalles-producto">
                 <h3 className="h3_title">{info.title}</h3>
                 <h5 className="h5_price">${info.price} USD</h5>
-                {info.btn}
+                <button className="btn_info">Más información</button>
               </div>
             </Link>
           </div>

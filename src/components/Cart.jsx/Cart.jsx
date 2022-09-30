@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/CartContext'
 import { addDoc, collection, getFirestore} from "firebase/firestore"
 import ItemCart from "../Itemcart.jsx/Itemcart"
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 
 const Cart = () => {
   const { cart, precioTotal } = useCartContext()
@@ -23,7 +25,12 @@ const Cart = () => {
     const ordenCollection = collection(db, "ordenes")
     addDoc(ordenCollection, orden)
     .then(({id}) => console.log(id))
-
+    Swal.fire({
+      icon: 'success',
+      title: 'Su orden ha sido generada ¡muchas gracias!',
+      showConfirmButton: false,
+      timer: 1500
+  })
   }
 
   if (cart.length === 0) {
@@ -42,7 +49,7 @@ const Cart = () => {
     }
     
     <div className='total'>
-    <p className='p_cart_total'>Precio total: {precioTotal()}</p>
+    <p className='p_cart_total'>Precio total: ${precioTotal()}</p>
     <button className='btn_orden' onClick={handleClick}>Generar su orden</button>
     </div>
     

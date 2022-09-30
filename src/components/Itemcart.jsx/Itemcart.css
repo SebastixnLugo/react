@@ -1,15 +1,19 @@
 .itemCart {
    display : flex ;
-   border-bottom : 1px solid rgb(150, 150, 150) ;
+   border-bottom : 1px solid rgb(150, 150, 150);
    max-width : 500px ;
    margin : 4rem auto 3rem auto;
-   
+   padding-bottom: 2rem;
 }
 
 .itemCart img {
    width : 200px ;
    margin-right : 1rem ;
-}             
+}       
+
+.cart_img:hover {
+   color: #F99F02;
+}
 
 .p_cart {
    color: #000;
@@ -43,6 +47,7 @@
    font-family: 'Poppins', sans-serif;
    font-weight: 600;
    padding-left: .5em;
+   color: #F99F02;
 }
 
 .cart {
@@ -98,3 +103,4 @@
    background-color:  #d34848;
    transition: all 0.5s;
 }
+
