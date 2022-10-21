@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react/static/css/main.ad311f26.css",
+    "main.js": "/react/static/js/main.7330be0b.js",
+    "static/js/787.f567d2d5.chunk.js": "/react/static/js/787.f567d2d5.chunk.js",
+    "static/media/shopping-cart.png": "/react/static/media/shopping-cart.b23a347b881e9c67d1b5.png",
+    "static/media/smartking-logo.png": "/react/static/media/smartking-logo.24a26f6608ad4b15c8d9.png",
+    "index.html": "/react/index.html",
+    "main.ad311f26.css.map": "/react/static/css/main.ad311f26.css.map",
+    "main.7330be0b.js.map": "/react/static/js/main.7330be0b.js.map",
+    "787.f567d2d5.chunk.js.map": "/react/static/js/787.f567d2d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad311f26.css",
+    "static/js/main.7330be0b.js"
+  ]
+}
