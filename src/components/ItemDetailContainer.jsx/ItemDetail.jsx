@@ -13,7 +13,7 @@ function Item({ datos }) {
     addProduct(datos, cantidad)
     Swal.fire({
       icon: 'success',
-      title: 'Su orden ha sido generada ¡muchas gracias!',
+      title: 'Su producto se agregó al carrito ¡muchas gracias!',
       showConfirmButton: false,
       timer: 1500
   })

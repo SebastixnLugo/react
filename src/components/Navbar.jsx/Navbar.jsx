@@ -5,12 +5,9 @@ import logo from "../img/smartking-logo.png";
 import mail from "../img/mail.png";
 import phone from "../img/phone.png";
 import Cartwidget from "../Cartwidget.jsx/Cartwidget";
-import {NavLink} from "react-router-dom";
-
-
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
-  
   return (
     <>
       <div className="after_header">
@@ -26,32 +23,57 @@ function Navbar() {
       </div>
 
       <header>
-        <div>
+        <div className="header_container">
           <ul className="nav_header">
-            <li><NavLink className="nav_link" to="/categoria/celulares">Celulares</NavLink></li>
-            <li><NavLink className="nav_link" to="/categoria/smartwatch">Smartwatch</NavLink></li>
+            <li>
+              <NavLink className="nav_link" to="/categoria/celulares">
+                Celulares
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="nav_link" to="/categoria/smartwatch">
+                Smartwatch
+              </NavLink>
+            </li>
           </ul>
         </div>
 
-        <NavLink className="logo_header" to="/"><img  src={logo} alt="" /></NavLink>
-        
+        {/* HEADER MOBILE */}
+        <div className="container_nav_header_mobile">
+          <ul className="nav_header_mobile">
+            <li>
+              <NavLink className="nav_link" to="/categoria/celulares">
+                Celulares
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="nav_link" to="/categoria/smartwatch">
+                Smartwatch
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+
+        <NavLink className="logo_header" to="/">
+          <img src={logo} alt="" />
+        </NavLink>
+
         <div>
-        {/* <img className="user_header" src={user} alt="" /> */}
           <NavLink to="/cart">
-          <Cartwidget/>
+            <Cartwidget />
           </NavLink>
         </div>
       </header>
 
-      <section className="banner">
-        <a href="index.html"><img src="https://cdn.discordapp.com/attachments/748659559530233911/1008047662240632892/banner-xiaomi_.png" alt=""/></a>
-        
-        
-      </section>
-
-      
-
-      
+      <div className="banner_container">
+        <a href="index.html">
+          <img
+            className="img_banner"
+            src="https://cdn.discordapp.com/attachments/748659559530233911/1008047662240632892/banner-xiaomi_.png"
+            alt=""
+          />
+        </a>
+      </div>
     </>
   );
 }

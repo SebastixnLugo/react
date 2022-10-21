@@ -15,7 +15,21 @@ const Footer = () => {
           </p>
         </div>
 
-        <div>
+        {/* FOOTER MOBILE */}
+        <div className="footer_mobile_container">
+          <div className="footer_mobile_logo">
+            <img src={logo} alt="" />
+          </div>
+
+          <div>
+            <img
+              src="https://cdn.discordapp.com/attachments/748659559530233911/1013925727336407070/unknown.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="img_footer">
           <img src={logo} alt="" />
         </div>
 
@@ -30,7 +44,11 @@ const Footer = () => {
 
       <div className="footer_debajo">
         <p>© 2022 SmartKING Chile.</p>
-        <img className="img_debajo" src="https://cdn.discordapp.com/attachments/748659559530233911/1013923361023348786/unknown.png" alt="" />
+        <img
+          className="img_debajo"
+          src="https://cdn.discordapp.com/attachments/748659559530233911/1013923361023348786/unknown.png"
+          alt=""
+        />
       </div>
     </>
   );

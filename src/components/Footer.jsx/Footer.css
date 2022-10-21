@@ -43,3 +43,34 @@
     width: 20%;
 }
 
+.footer_mobile_container {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .footer_l{
+        display: none;
+    }
+
+    .footer_r{
+        display: none;
+    }
+
+    .img_debajo {
+        display: none;
+    }
+
+    .img_footer {
+        display: none;
+    }
+
+    .footer_mobile_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_mobile_logo {
+        padding-bottom: 20px;
+    }
+}
+

@@ -12,7 +12,6 @@ header {
     height: 3.6rem;
 }
 
-
 .after_header {
     background-color: #3b3b3b;
     display: flex;
@@ -54,10 +53,7 @@ p {
     margin-left: 1rem;
 }
 
-.logo_header {
-    max-width: 10%;
-    cursor: pointer;
-}
+
 
 .r_header {
     display: flex;
@@ -66,14 +62,37 @@ p {
     cursor: pointer;
 }
 
+.nav_header_mobile {
+    display: none;
+}
 
-.banner {
+.banner_container {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
+.img_banner {
+    width: 100%;
+    height: auto;
+    }
 
-.user_header {
-    width: 10%;
-}
 
+/* MEDIAQ */
 
+@media (max-width: 750px) {
+    .nav_header {
+        display: none;
+    }
+
+    .container_nav_header_mobile {
+        background-color: #3b3b3b;
+    }
+
+    .after_header {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+  }
